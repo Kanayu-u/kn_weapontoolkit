@@ -21,6 +21,7 @@ from .weapon_page import WeaponPage
 from .widgets import label
 
 REPO_URL = 'https://github.com/Kanayu-u/kn_weapontoolkit'
+DISCORD_URL = 'https://discord.gg/9jXjrSp5wq'
 
 
 class MainWindow(QMainWindow):
@@ -214,7 +215,8 @@ class MainWindow(QMainWindow):
             'Robbster 氏の vWeaponsToolkit と、Hxrv3y 氏によるフォーク'
             '(FiveM Addon Weapon Tool Kit)を参考に、新しく書き直したものです。'
             'テンプレートは両プロジェクトとその貢献者によるものを修正して同梱しています。<br><br>'
-            '<a href="{url}">{url}</a>', name=APP_DISPLAY_NAME, version=__version__, url=REPO_URL))
+            '<a href="{url}">{url}</a>', name=APP_DISPLAY_NAME, version=__version__, url=REPO_URL)
+            + '<br><br>' + tr('質問・不具合の報告・要望: {link}', link=f'<a href="{DISCORD_URL}">Discord</a>'))
 
     # --- ドラッグ&ドロップ(フォルダ=モデルのフォルダ、.json=プロジェクト)
     @staticmethod

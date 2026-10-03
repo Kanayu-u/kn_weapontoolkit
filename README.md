@@ -4,7 +4,7 @@ GTA V / FiveM のアドオン武器リソースを作る Windows 用ツールで
 元にするバニラ武器(テンプレート)を選ぶと、`weapons.meta` などの meta 一式と `fxmanifest.lua` を付けて、
 そのままサーバーの `resources` に置けるフォルダとして書き出します。
 
-[English README](README.en.md)
+[English README](README.en.md) ・ 質問・不具合の報告・要望は [Discord](https://discord.gg/9jXjrSp5wq) へ
 
 ![武器ページ](docs/screenshots/weapon_ja.png)
 
@@ -107,6 +107,11 @@ weapon_m4a1/
 - 発砲音は既存の音声セットから選ぶだけで、独自の音は追加できません
 - 追加した 38 種の武器テンプレートは、動作と構え方を近い武器から借りています(公開されているデータに含まれていないため)。持ち方がバニラと違って見えることがあります。画面に借りた武器の名前が出ます
 - ミニガン系は近い動作を持つテンプレートが無いため同梱していません(自分で取り込めば使えます)
+
+## 質問・不具合の報告
+
+- 質問・要望・「この武器の持ち方がおかしい」などの報告は [Discord(KnScript)](https://discord.gg/9jXjrSp5wq) へどうぞ
+- 不具合は [Issues](https://github.com/Kanayu-u/kn_weapontoolkit/issues) でも受け付けます。使ったテンプレートと、点検の結果(4. 書き出し の一覧)を添えてください
 
 ## 開発
 

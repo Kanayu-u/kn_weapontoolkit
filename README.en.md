@@ -4,7 +4,7 @@ A Windows tool for creating add-on weapon resources for GTA V / FiveM. Pick a fo
 (.ydr / .ytd) and a vanilla weapon to base it on (the template), and it exports a folder — `weapons.meta` and the
 other metas plus `fxmanifest.lua` — that you can drop straight into your server's `resources`.
 
-[日本語 README](README.md)
+[日本語 README](README.md) · Questions, bug reports and requests: [Discord](https://discord.gg/9jXjrSp5wq)
 
 ![Weapon page](docs/screenshots/weapon_en.png)
 
@@ -80,6 +80,11 @@ weapon_m4a1/
 - The 38 added weapon templates borrow animations and movement from a similar weapon (that data is not in the public sources), so the way they are held may look different from vanilla. The app shows which weapon they borrow from
 - Minigun-type weapons are not bundled because no template has similar animations (you can import them yourself)
 - Imported templates are saved to `%APPDATA%\kn_weapontoolkit\templates` (File > Import templates…)
+
+## Support
+
+- For questions, requests, or reports like "this weapon is held wrong", join the [Discord (KnScript)](https://discord.gg/9jXjrSp5wq)
+- Bugs can also be reported in [Issues](https://github.com/Kanayu-u/kn_weapontoolkit/issues). Please include the template you used and the check results (the list on 4. Export)
 
 ## Development
 

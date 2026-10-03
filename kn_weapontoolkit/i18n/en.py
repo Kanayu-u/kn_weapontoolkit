@@ -216,6 +216,7 @@ T: dict[str, str] = {
     '3. コンポーネント': '3. Components',
     '4. 書き出し': '4. Export',
     '新規(&N)': '&New',
+    '質問・不具合の報告・要望: {link}': 'Questions, bug reports and requests: {link}',
     '武器ホイールの並び順は 1 以上にしてください。': 'The weapon wheel order must be 1 or greater.',
     'コンポーネント {name}: ボーン名に使えない文字があります(半角英数字と _ のみ): {bone}': 'Component {name}: the bone name has invalid characters (letters, digits and _ only): {bone}',
     'ファイルが多すぎるため、途中で探すのをやめました。meta の入ったフォルダだけを選んでください。': 'Too many files; stopped searching partway. Select only the folder that contains the meta files.',
