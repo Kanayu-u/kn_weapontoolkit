@@ -1,0 +1,25 @@
+{
+ "source": "weapon_strickler.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_STRICKLER_CLIP_01"
+   ]
+  ],
+  [
+   "WAPScop_2",
+   [
+    "COMPONENT_STRICKLER_SIGHT"
+   ]
+  ],
+  [
+   "WAPFlshLasr_3",
+   [
+    "COMPONENT_STRICKLER_FLSH"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_BULLPUPRIFLE",
+ "personality": "borrowed:WEAPON_BULLPUPRIFLE"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentInfo">
+      <Name>COMPONENT_PISTOL_MK2_CAMO_06_SLIDE</Name>
+      <Model>W_PI_PistolMK2_Slide_Camo6</Model>
+      <LocName>WCT_CAMO_1</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone>AAPCamo2</AttachBone>
+      <WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE</Name>
+      <Model>W_AR_AdvancedRifle_Luxe</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <WeaponAttachBone>gun_root</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0" />
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_ADVANCEDRIFLE_CLIP_01</ComponentName>
+          <ComponentModel>W_AR_AdvancedRifle_LUXE_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_ADVANCEDRIFLE_CLIP_02</ComponentName>
+          <ComponentModel>W_AR_AdvancedRifle_LUXE_mag2</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_AR_FLSH</ComponentName>
+          <ComponentModel>w_at_ar_flsh_pdluxe</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_SCOPE_SMALL</ComponentName>
+          <ComponentModel>W_AT_Scope_Small_LUXE</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_AR_SUPP</ComponentName>
+          <ComponentModel>W_AT_AR_Supp_LUXE</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

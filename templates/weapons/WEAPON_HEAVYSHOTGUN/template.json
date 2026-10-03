@@ -1,0 +1,31 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_HEAVYSHOTGUN_CLIP_01",
+    "COMPONENT_HEAVYSHOTGUN_CLIP_02",
+    "COMPONENT_HEAVYSHOTGUN_CLIP_03"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp_2",
+   [
+    "COMPONENT_AT_AR_SUPP_02"
+   ]
+  ],
+  [
+   "WAPGrip_2",
+   [
+    "COMPONENT_AT_AR_AFGRIP"
+   ]
+  ]
+ ]
+}

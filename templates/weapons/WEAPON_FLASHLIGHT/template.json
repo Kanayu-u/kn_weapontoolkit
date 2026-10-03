@@ -1,0 +1,13 @@
+{
+ "source": "weaponflashlight.meta",
+ "attach_points": [
+  [
+   "WAPFlsh",
+   [
+    "COMPONENT_FLASHLIGHT_LIGHT"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_NIGHTSTICK",
+ "personality": "borrowed:WEAPON_NIGHTSTICK"
+}

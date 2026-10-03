@@ -1,0 +1,6 @@
+{
+ "source": "weapons.meta",
+ "attach_points": [],
+ "animations": "borrowed:WEAPON_PIPEBOMB",
+ "personality": "borrowed:WEAPON_PIPEBOMB"
+}

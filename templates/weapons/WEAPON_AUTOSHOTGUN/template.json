@@ -1,0 +1,13 @@
+{
+ "source": "weaponautoshotgun.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_AUTOSHOTGUN_CLIP_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_ASSAULTSHOTGUN",
+ "personality": "borrowed:WEAPON_ASSAULTSHOTGUN"
+}

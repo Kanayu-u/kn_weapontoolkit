@@ -1,0 +1,30 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_PISTOL50_CLIP_01",
+    "COMPONENT_PISTOL50_CLIP_02"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_PI_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_AR_SUPP_02"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_PISTOL50_VARMOD_LUXE"
+   ]
+  ]
+ ]
+}

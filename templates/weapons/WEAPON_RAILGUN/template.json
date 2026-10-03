@@ -1,0 +1,13 @@
+{
+ "source": "weaponrailgun.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_RAILGUN_CLIP_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_RAILGUNXM3",
+ "personality": "borrowed:WEAPON_RAILGUNXM3"
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.ico binary
+*.png binary
+# テンプレートはゲームと同じ CRLF のまま置く(行末変換で差分を出さない)
+templates/** -text
+*.ps1 text eol=crlf

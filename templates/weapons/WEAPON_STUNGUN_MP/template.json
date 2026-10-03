@@ -1,0 +1,13 @@
+{
+ "source": "weapon_stungun_mp.meta",
+ "attach_points": [
+  [
+   "gun_root",
+   [
+    "COMPONENT_STUNGUN_VARMOD_BAIL"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_STUNGUN",
+ "personality": "borrowed:WEAPON_STUNGUN"
+}

@@ -1,0 +1,48 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_BULLPUPRIFLE_CLIP_01",
+    "COMPONENT_BULLPUPRIFLE_CLIP_02"
+   ]
+  ],
+  [
+   "WAPFlshLasr_2",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPScop_2",
+   [
+    "COMPONENT_AT_SCOPE_SMALL"
+   ]
+  ],
+  [
+   "WAPSupp_2",
+   [
+    "COMPONENT_AT_AR_SUPP"
+   ]
+  ],
+  [
+   "WAPGrip",
+   [
+    "COMPONENT_AT_AR_AFGRIP"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_BULLPUPRIFLE_VARMOD_LOW"
+   ]
+  ],
+  [
+   "gun_gripr",
+   [
+    "COMPONENT_GUNRUN_MK2_UPGRADE"
+   ]
+  ]
+ ]
+}

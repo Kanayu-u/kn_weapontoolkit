@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT</Name>
+      <Model>w_pi_pistolmk2_mag_hp</Model>
+      <LocName>WCT_CLIP_HP</LocName>
+      <LocDesc>WCD_CLIP_HP</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <WeaponAttachBone>WAPClip</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="10" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="8" />
+      <ReloadData ref="RELOAD_DEFAULT_WITH_EMPTIES" />
+      <AmmoInfo>AMMO_PISTOL_HOLLOWPOINT</AmmoInfo>
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

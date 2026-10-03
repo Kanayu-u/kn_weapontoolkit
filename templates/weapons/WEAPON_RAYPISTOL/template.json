@@ -1,0 +1,13 @@
+{
+ "source": "weapons_spacerangers.meta",
+ "attach_points": [
+  [
+   "gun_root",
+   [
+    "COMPONENT_RAYPISTOL_VARMOD_XMAS18"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_PISTOL",
+ "personality": "borrowed:WEAPON_PISTOL"
+}

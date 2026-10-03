@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_SPECIALCARBINE_CLIP_03</Name>
+      <Model>w_ar_specialcarbine_boxmag</Model>
+      <LocName>WCT_CLIP_DRM</LocName>
+      <LocDesc>WCD_CLIP3</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <WeaponAttachBone>WAPClip</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="100" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="100" />
+      <ReloadData ref="RELOAD_EXTRA_LARGE" />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

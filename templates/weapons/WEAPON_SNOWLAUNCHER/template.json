@@ -1,0 +1,6 @@
+{
+ "source": "weapon_snowlauncher.meta",
+ "attach_points": [],
+ "animations": "borrowed:WEAPON_PISTOL",
+ "personality": "borrowed:WEAPON_PISTOL"
+}

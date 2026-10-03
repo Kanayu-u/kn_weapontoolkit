@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER</Name>
+      <Model>w_sb_assaultsmg_luxe</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <WeaponAttachBone>gun_root</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2" />
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTSMG_CLIP_01</ComponentName>
+          <ComponentModel>w_sb_assaultsmg_luxe_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTSMG_CLIP_02</ComponentName>
+          <ComponentModel>w_sb_assaultsmg_luxe_mag2</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_AR_FLSH</ComponentName>
+          <ComponentModel>w_at_ar_flsh_pdluxe</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_SCOPE_MACRO</ComponentName>
+          <ComponentModel>w_at_scope_macro_luxe</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_AR_SUPP_02</ComponentName>
+          <ComponentModel>w_at_ar_supp_luxe_02</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

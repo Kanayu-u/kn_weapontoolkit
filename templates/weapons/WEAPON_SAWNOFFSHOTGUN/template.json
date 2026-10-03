@@ -1,0 +1,17 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_SAWNOFFSHOTGUN_CLIP_01"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE"
+   ]
+  ]
+ ]
+}

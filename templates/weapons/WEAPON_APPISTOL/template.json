@@ -1,0 +1,36 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_APPISTOL_CLIP_01",
+    "COMPONENT_APPISTOL_CLIP_02"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_PI_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_PI_SUPP"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_APPISTOL_VARMOD_LUXE"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_APPISTOL_VARMOD_SECURITY"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "source": "weapon_navyrevolver.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_NAVYREVOLVER_CLIP_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_REVOLVER",
+ "personality": "borrowed:WEAPON_REVOLVER"
+}

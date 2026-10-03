@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ</Name>
+      <Model>w_sr_marksmanriflemk2_mag_fmj</Model>
+      <LocName>WCT_CLIP_FMJ</LocName>
+      <LocDesc>WCD_CLIP_FMJ</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <WeaponAttachBone>WAPClip</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="10" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="5" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo>AMMO_SNIPER_FMJ</AmmoInfo>
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

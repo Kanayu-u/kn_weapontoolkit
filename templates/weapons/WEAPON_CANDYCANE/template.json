@@ -1,0 +1,6 @@
+{
+ "source": "weapon_candycane.meta",
+ "attach_points": [],
+ "animations": "borrowed:WEAPON_HAMMER",
+ "personality": "borrowed:WEAPON_HAMMER"
+}

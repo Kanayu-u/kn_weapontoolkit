@@ -1,0 +1,11 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_RAILGUNXM3_CLIP_01"
+   ]
+  ]
+ ]
+}

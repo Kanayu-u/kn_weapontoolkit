@@ -1,0 +1,13 @@
+{
+ "source": "weaponflaregun.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_FLAREGUN_CLIP_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_PISTOL",
+ "personality": "borrowed:WEAPON_PISTOL"
+}

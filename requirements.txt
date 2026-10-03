@@ -1,0 +1,3 @@
+PySide6>=6.11
+# ビルド
+pyinstaller>=6.22

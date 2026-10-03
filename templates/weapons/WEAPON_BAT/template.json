@@ -1,0 +1,20 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "gun_root",
+   [
+    "COMPONENT_BAT_VARMOD_XM3",
+    "COMPONENT_BAT_VARMOD_XM3_01",
+    "COMPONENT_BAT_VARMOD_XM3_02",
+    "COMPONENT_BAT_VARMOD_XM3_03",
+    "COMPONENT_BAT_VARMOD_XM3_04",
+    "COMPONENT_BAT_VARMOD_XM3_05",
+    "COMPONENT_BAT_VARMOD_XM3_06",
+    "COMPONENT_BAT_VARMOD_XM3_07",
+    "COMPONENT_BAT_VARMOD_XM3_08",
+    "COMPONENT_BAT_VARMOD_XM3_09"
+   ]
+  ]
+ ]
+}

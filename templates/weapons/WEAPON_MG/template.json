@@ -1,0 +1,24 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_MG_CLIP_01",
+    "COMPONENT_MG_CLIP_02"
+   ]
+  ],
+  [
+   "WAPScop_2",
+   [
+    "COMPONENT_AT_SCOPE_SMALL_02"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_MG_VARMOD_LOWRIDER"
+   ]
+  ]
+ ]
+}

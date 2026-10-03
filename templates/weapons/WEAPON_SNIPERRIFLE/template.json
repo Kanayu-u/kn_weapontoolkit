@@ -1,0 +1,30 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_SNIPERRIFLE_CLIP_01"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_AR_SUPP_02"
+   ]
+  ],
+  [
+   "WAPScop",
+   [
+    "COMPONENT_AT_SCOPE_LARGE",
+    "COMPONENT_AT_SCOPE_MAX"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_SNIPERRIFLE_VARMOD_LUXE"
+   ]
+  ]
+ ]
+}

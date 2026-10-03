@@ -1,0 +1,25 @@
+{
+ "source": "weapons.meta",
+ "attach_points": [
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPGrip",
+   [
+    "COMPONENT_AT_AR_AFGRIP"
+   ]
+  ],
+  [
+   "WAPScop",
+   [
+    "COMPONENT_AT_SCOPE_SMALL"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_GRENADELAUNCHER",
+ "personality": "borrowed:WEAPON_GRENADELAUNCHER"
+}

@@ -1,0 +1,13 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "gun_root",
+   [
+    "COMPONENT_SWITCHBLADE_VARMOD_BASE",
+    "COMPONENT_SWITCHBLADE_VARMOD_VAR1",
+    "COMPONENT_SWITCHBLADE_VARMOD_VAR2"
+   ]
+  ]
+ ]
+}

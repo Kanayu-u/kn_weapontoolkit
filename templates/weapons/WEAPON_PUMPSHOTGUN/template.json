@@ -1,0 +1,47 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_PUMPSHOTGUN_CLIP_01"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_SR_SUPP"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"
+   ]
+  ],
+  [
+   "gun_gripr",
+   [
+    "COMPONENT_GUNRUN_MK2_UPGRADE"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_PUMPSHOTGUN_VARMOD_XM3"
+   ]
+  ]
+ ]
+}

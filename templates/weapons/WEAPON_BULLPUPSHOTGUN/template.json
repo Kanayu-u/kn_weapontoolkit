@@ -1,0 +1,31 @@
+{
+ "source": "weapons.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_BULLPUPSHOTGUN_CLIP_01"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_AR_SUPP_02"
+   ]
+  ],
+  [
+   "WAPGrip",
+   [
+    "COMPONENT_AT_AR_AFGRIP"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_PUMPSHOTGUN",
+ "personality": "borrowed:WEAPON_PUMPSHOTGUN"
+}

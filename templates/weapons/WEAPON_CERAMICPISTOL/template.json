@@ -1,0 +1,20 @@
+{
+ "source": "weapon_ceramicpistol.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_CERAMICPISTOL_CLIP_01",
+    "COMPONENT_CERAMICPISTOL_CLIP_02"
+   ]
+  ],
+  [
+   "WAPSupp_2",
+   [
+    "COMPONENT_CERAMICPISTOL_SUPP"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_PISTOL",
+ "personality": "borrowed:WEAPON_PISTOL"
+}

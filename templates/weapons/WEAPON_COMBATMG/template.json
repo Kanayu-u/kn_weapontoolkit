@@ -1,0 +1,36 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_COMBATMG_CLIP_01",
+    "COMPONENT_COMBATMG_CLIP_02"
+   ]
+  ],
+  [
+   "WAPScop_2",
+   [
+    "COMPONENT_AT_SCOPE_MEDIUM"
+   ]
+  ],
+  [
+   "WAPGrip",
+   [
+    "COMPONENT_AT_AR_AFGRIP"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_COMBATMG_VARMOD_LOWRIDER"
+   ]
+  ],
+  [
+   "gun_gripr",
+   [
+    "COMPONENT_GUNRUN_MK2_UPGRADE"
+   ]
+  ]
+ ]
+}

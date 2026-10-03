@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_MILITARYRIFLE_SIGHT_01</Name>
+      <Model>w_ar_bullpuprifleh4_sight</Model>
+      <LocName>WCT_MRFL_SIGHT</LocName>
+      <LocDesc>WCD_MRFL_SIGHT</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <CameraHash />
+      <RecoilShakeAmplitude value="0.333000" />
+      <ExtraZoomFactorForAccurateMode value="1.000000" />
+      <Reticule value="0" />
+      <ReticuleHash />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

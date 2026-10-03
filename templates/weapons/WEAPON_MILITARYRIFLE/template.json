@@ -1,0 +1,33 @@
+{
+ "source": "weapon_militaryrifle.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_MILITARYRIFLE_CLIP_01",
+    "COMPONENT_MILITARYRIFLE_CLIP_02"
+   ]
+  ],
+  [
+   "WAPFlshLasr_2",
+   [
+    "COMPONENT_AT_AR_FLSH"
+   ]
+  ],
+  [
+   "WAPScop_2",
+   [
+    "COMPONENT_MILITARYRIFLE_SIGHT_01",
+    "COMPONENT_AT_SCOPE_SMALL"
+   ]
+  ],
+  [
+   "WAPSupp_2",
+   [
+    "COMPONENT_AT_AR_SUPP"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_BULLPUPRIFLE",
+ "personality": "borrowed:WEAPON_BULLPUPRIFLE"
+}

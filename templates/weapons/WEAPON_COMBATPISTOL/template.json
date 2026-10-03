@@ -1,0 +1,31 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_COMBATPISTOL_CLIP_01",
+    "COMPONENT_COMBATPISTOL_CLIP_02"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_PI_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_PI_SUPP"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER",
+    "COMPONENT_COMBATPISTOL_VARMOD_XMAS23"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,6 @@
+{
+ "source": "weaponbattleaxe.meta",
+ "attach_points": [],
+ "animations": "borrowed:WEAPON_HATCHET",
+ "personality": "borrowed:WEAPON_HATCHET"
+}

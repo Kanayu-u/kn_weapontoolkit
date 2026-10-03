@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE</Name>
+      <Model>w_sg_pumpshotgunmk2_mag_exp</Model>
+      <LocName>WCT_SHELL_EX</LocName>
+      <LocDesc>WCD_SHELL_EX</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <WeaponAttachBone>WAPClip</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="10" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="8" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo>AMMO_SHOTGUN_EXPLOSIVE</AmmoInfo>
+      <TracerFx>bullet_tracer</TracerFx>
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+      <ShellFx>eject_shotgun_exp</ShellFx>
+      <ShellFxFP>eject_shotgun_exp_fp</ShellFxFP>
+      <BulletsInBatch value="1" />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

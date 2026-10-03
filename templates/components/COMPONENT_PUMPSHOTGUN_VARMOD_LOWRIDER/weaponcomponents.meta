@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER</Name>
+      <Model>w_sg_pumpshotgun_luxe</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <WeaponAttachBone>gun_root</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2" />
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_AT_AR_FLSH</ComponentName>
+          <ComponentModel>w_at_ar_flsh_pdluxe</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_AT_SR_SUPP</ComponentName>
+          <ComponentModel>w_at_ar_supp_luxe_02</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

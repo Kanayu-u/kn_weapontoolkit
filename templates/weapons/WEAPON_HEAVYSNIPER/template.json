@@ -1,0 +1,30 @@
+{
+ "source": "vWeaponsToolkit / FiveM Addon Weapon Tool Kit",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_HEAVYSNIPER_CLIP_01"
+   ]
+  ],
+  [
+   "WAPScop",
+   [
+    "COMPONENT_AT_SCOPE_LARGE",
+    "COMPONENT_AT_SCOPE_MAX"
+   ]
+  ],
+  [
+   "gun_gripr",
+   [
+    "COMPONENT_GUNRUN_MK2_UPGRADE"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"
+   ]
+  ]
+ ]
+}

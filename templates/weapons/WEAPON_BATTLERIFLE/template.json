@@ -1,0 +1,20 @@
+{
+ "source": "weapon_battlerifle.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_BATTLERIFLE_CLIP_01",
+    "COMPONENT_BATTLERIFLE_CLIP_02"
+   ]
+  ],
+  [
+   "WAPSupp_3",
+   [
+    "COMPONENT_AT_AR_SUPP"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_ASSAULTRIFLE",
+ "personality": "borrowed:WEAPON_ASSAULTRIFLE"
+}

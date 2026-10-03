@@ -1,0 +1,13 @@
+{
+ "source": "weaponmarksmanpistol.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_MARKSMANPISTOL_CLIP_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_PISTOL",
+ "personality": "borrowed:WEAPON_PISTOL"
+}

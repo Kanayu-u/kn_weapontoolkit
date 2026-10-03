@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_AT_SIGHTS_SMG</Name>
+      <Model>w_at_sights_smg</Model>
+      <LocName>WCT_HOLO</LocName>
+      <LocDesc>WCD_HOLO</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <WeaponAttachBone>WAPScop</WeaponAttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="5" />
+      <HudRange value="0" />
+      <CameraHash />
+      <RecoilShakeAmplitude value="0.280000" />
+      <ExtraZoomFactorForAccurateMode value="1.200000" />
+      <ReticuleHash />
+      <SpecialScopeType />
+    </Item>
+  </Infos>
+  <InfoBlobName />
+</CWeaponComponentInfoBlob>

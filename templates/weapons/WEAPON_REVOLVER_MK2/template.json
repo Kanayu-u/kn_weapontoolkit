@@ -1,0 +1,52 @@
+{
+ "source": "weapons_revolver_mk2.meta",
+ "attach_points": [
+  [
+   "WAPClip",
+   [
+    "COMPONENT_REVOLVER_MK2_CLIP_01",
+    "COMPONENT_REVOLVER_MK2_CLIP_FMJ",
+    "COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT",
+    "COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY",
+    "COMPONENT_REVOLVER_MK2_CLIP_TRACER"
+   ]
+  ],
+  [
+   "WAPScop",
+   [
+    "COMPONENT_AT_SIGHTS",
+    "COMPONENT_AT_SCOPE_MACRO_MK2"
+   ]
+  ],
+  [
+   "WAPFlshLasr",
+   [
+    "COMPONENT_AT_PI_FLSH"
+   ]
+  ],
+  [
+   "WAPSupp",
+   [
+    "COMPONENT_AT_PI_COMP_03"
+   ]
+  ],
+  [
+   "gun_root",
+   [
+    "COMPONENT_REVOLVER_MK2_CAMO",
+    "COMPONENT_REVOLVER_MK2_CAMO_02",
+    "COMPONENT_REVOLVER_MK2_CAMO_03",
+    "COMPONENT_REVOLVER_MK2_CAMO_04",
+    "COMPONENT_REVOLVER_MK2_CAMO_05",
+    "COMPONENT_REVOLVER_MK2_CAMO_06",
+    "COMPONENT_REVOLVER_MK2_CAMO_07",
+    "COMPONENT_REVOLVER_MK2_CAMO_08",
+    "COMPONENT_REVOLVER_MK2_CAMO_09",
+    "COMPONENT_REVOLVER_MK2_CAMO_10",
+    "COMPONENT_REVOLVER_MK2_CAMO_IND_01"
+   ]
+  ]
+ ],
+ "animations": "borrowed:WEAPON_REVOLVER",
+ "personality": "borrowed:WEAPON_REVOLVER"
+}
