@@ -84,7 +84,7 @@ weapon_m4a1/
 ## Support
 
 - For questions, requests, or reports like "this weapon is held wrong", join the [Discord (KnScript)](https://discord.gg/9jXjrSp5wq)
-- Bugs can also be reported in [Issues](https://github.com/Kanayu-u/kn_weapontoolkit/issues). Please include the template you used and the check results (the list on 4. Export)
+- When reporting a bug, please include the template you used and the check results (the list on 4. Export)
 
 ## Development
 

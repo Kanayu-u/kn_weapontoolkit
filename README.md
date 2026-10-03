@@ -111,7 +111,7 @@ weapon_m4a1/
 ## 質問・不具合の報告
 
 - 質問・要望・「この武器の持ち方がおかしい」などの報告は [Discord(KnScript)](https://discord.gg/9jXjrSp5wq) へどうぞ
-- 不具合は [Issues](https://github.com/Kanayu-u/kn_weapontoolkit/issues) でも受け付けます。使ったテンプレートと、点検の結果(4. 書き出し の一覧)を添えてください
+- 不具合の報告には、使ったテンプレートと、点検の結果(4. 書き出し の一覧)を添えてください
 
 ## 開発
 
