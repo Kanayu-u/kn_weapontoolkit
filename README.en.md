@@ -38,7 +38,7 @@ The full list is in [CHANGELOG.md](CHANGELOG.md) (Japanese).
 
 1. Download the zip from [Releases](https://github.com/Kanayu-u/kn_weapontoolkit/releases), extract it and run `kn_weapontoolkit.exe` (keep the `templates` folder next to the exe)
 2. **1. Weapon** — select the model folder (or drop it on the window), then set the template, display name, weapon ID and model name. To reuse a vanilla weapon model, just enter its name and leave the folder empty
-3. **2. Stats** — change only the values you want (optional)
+3. **2. Stats** — change only the values you want (optional). Fields such as ammo type and fire type are picked from a list; some entries show a description when you hover over them. To use a value not in the list, choose "Other (type a value)…" at the bottom
 4. **3. Components** — define parts with "Detect from files" or "Add" (optional)
 5. **4. Export** — review the checks, choose an output folder and press "Export"
 6. Put the exported folder in your server's `resources` and add `ensure <resource name>` to `server.cfg`

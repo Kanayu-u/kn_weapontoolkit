@@ -139,6 +139,57 @@ class GuiTest(unittest.TestCase):
         self.assertEqual(w.stack.currentIndex(), 0)
         self.assertEqual(w.weapon_page.weapon_id.text(), fresh.weapon_id)
 
+    def _stats_combo(self, tag):
+        from kn_weapontoolkit.model import Project
+        w = self.win
+        w.state.set_project(Project(), None)
+        page = w.stats_page
+        return w.state, page, page._editors[tag][1]
+
+    def test_choice_is_select_only(self):
+        from kn_weapontoolkit.ui.stats_page import OTHER
+        state, page, combo = self._stats_combo('AmmoInfo')
+        tpl_value = state.template().field('AmmoInfo').value
+        self.assertFalse(combo.isEditable())
+        self.assertEqual(combo.currentData(), tpl_value)
+        self.assertIn(tpl_value, combo.currentText())          # 「(テンプレートの値)」付きで表示
+        self.assertIs(combo.itemData(combo.count() - 1), OTHER)
+        i = combo.findData('AMMO_SNIPER')
+        combo.activated.emit(i)
+        self.assertEqual(state.project.fields['AmmoInfo'], 'AMMO_SNIPER')
+        combo.activated.emit(combo.findData(tpl_value))         # テンプレートの値に戻すと変更なし
+        self.assertNotIn('AmmoInfo', state.project.fields)
+        state.dirty = False
+
+    def test_choice_other_and_unlisted_value(self):
+        state, page, combo = self._stats_combo('AmmoInfo')
+        n = combo.count()
+        page._ask_value = lambda _title, _cur: 'AMMO_MY_ADDON'
+        try:
+            combo.activated.emit(combo.count() - 1)
+        finally:
+            del page._ask_value
+        self.assertEqual(state.project.fields['AmmoInfo'], 'AMMO_MY_ADDON')
+        self.assertEqual(combo.currentData(), 'AMMO_MY_ADDON')     # 候補に無い値も消さずに見せる
+        self.assertEqual(combo.count(), n + 1)
+        page._ask_value = lambda _title, _cur: None                 # 取り消し: 値は変わらない
+        try:
+            combo.activated.emit(combo.count() - 1)
+        finally:
+            del page._ask_value
+        self.assertEqual(state.project.fields['AmmoInfo'], 'AMMO_MY_ADDON')
+        self.assertEqual(combo.currentData(), 'AMMO_MY_ADDON')
+        state.dirty = False
+
+    def test_choice_tooltip(self):
+        from PySide6.QtCore import Qt
+        state, page, combo = self._stats_combo('FireType')
+        i = combo.findData('PROJECTILE')
+        self.assertTrue(combo.itemData(i, Qt.ItemDataRole.ToolTipRole))
+        combo.activated.emit(i)
+        self.assertIn('PROJECTILE:', combo.toolTip())
+        state.dirty = False
+
     def test_reset_cancel_keeps_project(self):
         w = self.win
         p = w.state.project

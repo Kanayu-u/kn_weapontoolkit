@@ -29,3 +29,31 @@ BASIC_FIELDS: list[tuple[str, str, str, list[str] | None]] = [
     ('DamageFallOffModifier', N_('減衰後の威力倍率'), N_('減衰しきったときのダメージ倍率。'), None),
 ]
 BASIC_TAGS = [f[0] for f in BASIC_FIELDS]
+
+# 候補ごとの説明(一覧で候補にカーソルを重ねると出る)。同梱テンプレートで使い道を確かめられたものだけ載せる
+CHOICE_TIPS: dict[str, dict[str, str]] = {
+    'FireType': {
+        'INSTANT_HIT': N_('弾が即座に当たる。普通の銃。'),
+        'DELAYED_HIT': N_('スナイパーライフル・マークスマンライフル・マスケットが使う方式。'),
+        'PROJECTILE': N_('弾が実体として飛ぶ。ロケット・グレネード・投擲物。'),
+        'VOLUMETRIC_PARTICLE': N_('噴射。消火器・ガソリン缶。'),
+        'MELEE': N_('近接武器。'),
+        'NONE': N_('撃たない。'),
+    },
+    'DamageType': {
+        'BULLET': N_('弾。普通の銃。'),
+        'MELEE': N_('近接武器。'),
+        'EXPLOSIVE': N_('爆発。ランチャー・グレネード。着弾時の爆発を使うときもこれにします。'),
+        'FIRE': N_('炎。火炎瓶。'),
+        'ELECTRIC': N_('電撃。スタンガン・スタンロッド。'),
+        'SMOKE': N_('煙・ガス。スモークグレネード・BZガス。'),
+        'NONE': N_('ダメージなし。ボール・照明弾・雪玉など。'),
+        'FIRE_EXTINGUISHER': N_('消火器の噴射。'),
+    },
+    'Explosion/Default': {
+        'DONTCARE': N_('爆発しない。バニラの普通の銃はこれ。'),
+        'EXP_TAG_RAILGUN': N_('レールガンの爆発。'),
+        'EXP_TAG_RAILGUNXM3': N_('レールガン(XM3)の爆発。'),
+        'GRENADE': N_('グレネードの爆発。'),
+    },
+}

@@ -5,14 +5,16 @@ import math
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QColor, QFont
-from PySide6.QtWidgets import (QGridLayout, QHBoxLayout, QHeaderView, QLabel, QLineEdit, QPushButton, QScrollArea,
-                               QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QGridLayout, QHBoxLayout, QHeaderView, QInputDialog, QLabel, QLineEdit, QPushButton,
+                               QScrollArea, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
 
-from ..fieldinfo import BASIC_FIELDS
+from ..fieldinfo import BASIC_FIELDS, CHOICE_TIPS
 from ..i18n import tr
 from . import theme
 from .state import AppState
-from .widgets import NoWheelComboBox, card, label, page_header, repolish, set_combo_text
+from .widgets import NoWheelComboBox, card, label, page_header, repolish
+
+OTHER = object()    # 「その他(手入力)…」の印(候補の値と取り違えないよう文字列にしない)
 
 
 class StatsPage(QWidget):
@@ -120,15 +122,24 @@ class StatsPage(QWidget):
                 lb.setObjectName('fieldLabel')
                 lb.setToolTip(f'{tr(tip)}\n<{tag}>')
                 if choices is not None:
+                    # 選ぶだけの一覧。候補に無い値は最後の「その他(手入力)…」から入れる
                     ed = NoWheelComboBox()
-                    ed.setEditable(True)
-                    ed.setInsertPolicy(NoWheelComboBox.InsertPolicy.NoInsert)
-                    ed.addItems(choices)
-                    ed.editTextChanged.connect(lambda text, t=tag, e=ed: self._set(t, text, e))
+                    # 一番長い候補の幅まで欄が広がって右にはみ出すため、欄は狭く保ち、開いた一覧だけ広げる
+                    ed.setSizeAdjustPolicy(NoWheelComboBox.SizeAdjustPolicy.AdjustToMinimumContentsLengthWithIcon)
+                    ed.setMinimumContentsLength(12)
+                    tips = CHOICE_TIPS.get(tag, {})
+                    for c in choices:
+                        self._add_choice(ed, c, f.value, tips)
+                    if ed.findData(f.value) < 0:
+                        self._add_choice(ed, f.value, f.value, tips, index=0)
+                    ed.addItem(tr('その他(手入力)…'), OTHER)
+                    ed.view().setMinimumWidth(ed.view().sizeHintForColumn(0) + 32)
+                    ed.activated.connect(lambda i, t=tag, e=ed: self._on_choice(t, e, i))
                 else:
                     ed = QLineEdit()
                     ed.textEdited.connect(lambda text, t=tag, e=ed: self._set(t, text, e))
                 ed.setToolTip(lb.toolTip())
+                ed.setProperty('baseTip', lb.toolTip())
                 self.basic_grid.addWidget(lb, row, 0)
                 self.basic_grid.addWidget(ed, row, 1)
                 self._editors[tag] = (lb, ed)
@@ -161,12 +172,11 @@ class StatsPage(QWidget):
             for tag, (lb, ed) in self._editors.items():
                 f = tpl.field(tag)
                 value = p.fields.get(tag, f.value)
-                if ed is not skip:
-                    if isinstance(ed, QLineEdit):
-                        if ed.text() != value:
-                            ed.setText(value)
-                    elif ed.currentText() != value:
-                        set_combo_text(ed, value)
+                if isinstance(ed, QLineEdit):
+                    if ed is not skip and ed.text() != value:
+                        ed.setText(value)
+                else:
+                    self._show_choice(tag, ed, value, f.value)
                 changed = tag in p.fields
                 if lb.property('changed') != changed:
                     lb.setProperty('changed', changed)
@@ -217,6 +227,46 @@ class StatsPage(QWidget):
             p.fields[tag] = value
         self.refresh_values(skip=source, restyle=False)     # 入力中の欄(source)は書き戻さない(カーソルが飛ぶ)
         self.state.touch()
+
+    # --- 候補から選ぶ欄
+    @staticmethod
+    def _add_choice(combo: NoWheelComboBox, value: str, template_value: str, tips: dict[str, str],
+                    index: int = -1) -> None:
+        text = value + ('  ' + tr('(テンプレートの値)') if value == template_value else '')
+        if index < 0:
+            index = combo.count() - (1 if combo.count() and combo.itemData(combo.count() - 1) is OTHER else 0)
+        combo.insertItem(index, text, value)
+        if value in tips:
+            combo.setItemData(index, tr(tips[value]), Qt.ItemDataRole.ToolTipRole)
+
+    def _show_choice(self, tag: str, combo: NoWheelComboBox, value: str, template_value: str) -> None:
+        """value を選んだ状態にする。候補に無い値(手入力・取り込んだテンプレート)は先頭に足して、消さずに見せる。"""
+        i = combo.findData(value)
+        if i < 0:
+            self._add_choice(combo, value, template_value, CHOICE_TIPS.get(tag, {}), index=0)
+            i = 0
+        if combo.currentIndex() != i:
+            combo.setCurrentIndex(i)
+        tip = combo.itemData(i, Qt.ItemDataRole.ToolTipRole)
+        base = combo.property('baseTip')
+        combo.setToolTip(f'{base}\n\n{value}' + (f': {tip}' if tip else ''))     # 欄が狭く値が切れて見えるときのため値も出す
+
+    def _ask_value(self, title: str, current: str) -> str | None:
+        """候補に無い値を入れてもらう。テストでは差し替える。"""
+        text, ok = QInputDialog.getText(self, title, tr('値を入力してください(候補に無いもの)。'), text=current)
+        return text.strip() if ok and text.strip() else None
+
+    def _on_choice(self, tag: str, combo: NoWheelComboBox, index: int) -> None:
+        data = combo.itemData(index)
+        if data is OTHER:
+            lb = self._editors[tag][0]
+            tpl = self.state.template()
+            current = self.state.project.fields.get(tag, tpl.field(tag).value if tpl is not None else '')
+            data = self._ask_value(lb.text(), current)
+            if data is None:
+                self.refresh_values()       # 取り消したら、前の値の表示に戻す
+                return
+        self._set(tag, data)
 
     def _on_cell(self, row: int, column: int) -> None:
         if self._loading or column != 1:
